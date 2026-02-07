@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+#roguinsuru {
+    display       : inline-block;
+    border-radius : 5%;
+    font-size     : 16pt;
+    text-align    : center;
+    cursor        : pointer;
+    padding       : 12px 12px;
+    background    : #6666ff;
+    color         : #ffffff;
+    line-height   : 1em;
+    transition    : .3s;
+    border        : 2px solid #6666ff;
+}
+#roguinsuru:hover {
+    color         : #6666ff;
+    background    : #ffffff;
+}
+
+#sinki {
+    display       : inline-block;
+    border-radius : 5%;
+    font-size     : 16pt;
+    text-align    : center;
+    cursor        : pointer;
+    padding       : 12px 12px;
+    background    : #ffffff;
+    color         : #6666ff;
+    line-height   : 1em;
+    transition    : .3s;
+    border        : 2px solid #ffffff;
+}
+#sinki:hover {
+    color         : #ffffff;
+    background    : #6666ff;
+}
+.box{
+    text-align: center;
+}

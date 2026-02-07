@@ -1,0 +1,172 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+.task-sections {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.task-box {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: 22%;
+}
+.task-list {
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+.task-item {
+    background: #eee;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+}
+.task-table {
+    width: 90%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background: #f8f8f8;
+}
+a {
+	text-decoration:none;
+	color:black;
+}
+
+
+#summerModal,#summerManual {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff8e7;
+  border: 2px solid #ffa;
+  padding: 1.5em;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  max-width: 90%;
+  z-index: 1000;
+}
+
+#summerModal.show,#summerManual.show {
+  display: block;
+  animation: fadeIn 0.4s ease;
+}
+
+#summerModal button,#summerManual button {
+  margin-top: 1em;
+  padding: 0.5em 1em;
+  border: none;
+  background: #ffcc66;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.help-btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 24px;
+    text-align: center;
+    padding: 0;
+    font-size: 14px;
+  }
+  .help-btn:hover {
+    background-color: #0056b3;
+  }
+  form table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+
+  form th, form td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+
+  @media (max-width: 640px) {
+    form table thead {
+      display: none; 
+    }
+
+    form table, 
+    form tbody, 
+    form tr, 
+    form td {
+      display: block;
+      width: 100%;
+    }
+
+    form table tr {
+      margin-bottom: 15px;
+      padding: 12px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+
+    form table td {
+      padding: 8px 10px;
+      border: none;
+      position: relative;
+    }
+
+    form table td::before {
+      content: attr(data-label);
+      display: block;
+      font-weight: 600;
+      margin-bottom: 4px;
+      color: #333;
+    }
+
+    form input, 
+    form select {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 8px;
+      font-size: 14px;
+    }
+
+    form table td[colspan] {
+      text-align: center;
+      padding-top: 10px;
+    }
+  }
